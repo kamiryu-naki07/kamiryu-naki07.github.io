@@ -1,0 +1,231 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
+
+:root {
+    font-feature-settings: "palt";
+}
+
+.headd {
+    font-size: 16pt;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    background: rgb(255, 255, 255, 0.8);
+    width: 100%;
+    border: 1px solid white;
+}
+
+.headd h1{
+    flex: 1;
+    color: black;
+}
+
+.headd nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.headd nav ul li {
+    padding: 1.5rem;
+    color: gray;
+}
+
+main {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+
+.profile-photo img {
+    display: block;
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+}
+
+.profile-text p {
+    font-size: 20px;
+}
+.profile-text {
+    max-width: 560px; 
+    padding: 2rem; 
+    color: #000; 
+}
+
+.profile-text h1 {
+    font-size: 3rem;
+    letter-spacing: 0.1em; 
+    font-weight: 100;
+}
+
+.under {
+    max-width: 120px;
+    border-bottom: solid 2px black;
+}
+.profile-text h2 {
+    font-weight: 10;
+}
+
+.profile-text h3 {
+    font-weight: 10;
+}
+.profile-text img {
+    width: auto;
+    height: 50px;
+}
+
+.prof {
+    width: 100%;
+    text-align: center;
+    padding: 400px 0px 350px 0px;
+    font-size:30px;
+}
+
+.prof h2 {
+    font-weight: 100px;
+    font-size: 50px;
+}
+
+.prof p {
+    font-size: 80%;
+    color: gray;
+}
+
+.content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 160px;
+    padding-right: 100px;
+    background: #e0e0e0;
+    align-items: center;
+}
+
+
+
+div ul {
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+}
+div li {   
+    margin: 5px;
+    display: inline-block;
+}
+div img {
+    width: 152px;
+    height: 120px;
+}
+div figcaption {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gallery {
+	overflow: hidden;
+    margin: 0px -42px 50px -42px;
+}
+
+.gallery .item {
+	float: left;
+	width: 152px;
+	height: 120px;
+    margin: 0px 42px 50px 42px;
+    padding-bottom: 150px;
+}
+	
+.gallery .item h2,
+.gallery .item p {
+	width: 400px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.gallery .item h2 {
+	font-size: 15px;
+	padding-top: 10px;
+}
+	
+.gallery .item p {
+	padding-top: 4px;
+	font-size: 10px;
+	color: #aaaaaa;
+	letter-spacing: 0;
+}
+
+.gallery .item a,
+.gallery .item img {
+	width: 100%;
+}
+
+footer {
+    position: relative;
+    background: gray;
+    height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    display: flex-end;
+}
+
+footer ul li {
+    padding: 1.5rem;
+    color: white;
+}
+
+
+
+.profile-photo {
+    position: relative;
+}
+.circle1,
+.circle2,
+.circle3 {
+    position: absolute; /* 縁取り要素は絶対配置 */
+    top: 0; /* .profile-photoの開始位置と揃える */
+    width: 300px;
+    height: 300px;
+    border-radius: 40%; /* 40%の角丸めで歪な形を作成しておく */
+    z-index: -1; /* 画像と背景の間に重ねる */
+}
+
+/* rotationという名前のアニメーションを作成 */
+@keyframes rotation {
+    from {  /* 開始時点の装飾 */
+      transform: rotate(0deg);  /* 変形操作の内、回転0度 */
+    }
+  
+    to {  /* 終了時点の装飾 */
+      transform: rotate(360deg); /* 変形操作の内、回転360度 */
+    }
+}
+
+.circle1 {
+    opacity: 0.1; /* 透明度 */
+    background: rgb(255, 217, 0); /* 縁取りの色設定 */
+    transform-origin: 50% 47%;  /* transformの基準位置を変更 */
+    animation: rotation 5s infinite linear; /* rotationアニメーションの秒数と繰り返し、変化を線形に変更 */
+}
+  
+.circle2 {
+    opacity: 0.3;
+    background: rgb(230, 18, 18);
+    transform-origin: 52% 48%;
+    animation: rotation 12s infinite linear;
+}
+  
+.circle3 {
+    opacity: 0.2;
+    background: #fa0;
+    transform-origin: 48% 52%;
+    animation: rotation 8s infinite linear;
+}
