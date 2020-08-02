@@ -86,7 +86,7 @@ main {
 .prof {
     width: 100%;
     text-align: center;
-    padding: 400px 0px 350px 0px;
+    padding: 300px 0px 350px 0px;
     font-size:30px;
 }
 
@@ -109,7 +109,16 @@ main {
     align-items: center;
 }
 
+.content h3 {
+    font-size: 300%;
+}
 
+.content a {
+    font-size: 200%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 div ul {
     list-style: none;
@@ -134,9 +143,10 @@ div figcaption {
 .gallery {
 	overflow: hidden;
     margin: 0px -42px 50px -42px;
+    display: inline-block;
 }
 
-.gallery .item {
+.gallery .works {
 	float: left;
 	width: 152px;
 	height: 120px;
@@ -144,27 +154,27 @@ div figcaption {
     padding-bottom: 150px;
 }
 	
-.gallery .item h2,
-.gallery .item p {
+.gallery .works h2,
+.gallery .works p {
 	width: 400px;
 	opacity: 0;
 	filter: alpha(opacity=0);
 }
 
-.gallery .item h2 {
+.gallery .works h2 {
 	font-size: 15px;
 	padding-top: 10px;
 }
 	
-.gallery .item p {
+.gallery .works p {
 	padding-top: 4px;
 	font-size: 10px;
 	color: #aaaaaa;
 	letter-spacing: 0;
 }
 
-.gallery .item a,
-.gallery .item img {
+.gallery .works a,
+.gallery .works img {
 	width: 100%;
 }
 

@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16pt;
+    font-feature-settings: "palt";
+}
+
+.global-nav{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    background: #000000;
+    width: 100%;
+    border: 1px solid gray;
+    color: #ff7dff;
+}
+
+.global-nav h1{
+    flex: 1;
+}
+
+.global-nav nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.global-nav nav ul li {
+    padding: 1rem;
+}
+
+.content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #ffffff;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 10px 5px;
+}
+.characterinfo {
+    text-align: center;
+    padding: 10px;
+}
+div ul {
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+}
+div li {   
+    margin: 5px;
+    display: inline-block;
+}
+div img {
+    width: 300px;
+    height: 200px;
+}
+div figcaption {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    background: rgb(117, 117, 117);
+    height: 200px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h2 {
+    padding-top: 40px;
+    padding-left: 150px;
+}
+
+.content {
+    padding-left: 100px;
+}
+
+.effect {
+    padding: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 18px -4px rgba(0, 0, 0, 0.8);
+}
